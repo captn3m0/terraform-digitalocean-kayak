@@ -34,3 +34,23 @@ Type: `string`
 
 Default: `"1gb"`
 
+## Outputs
+
+The following outputs are exported:
+
+### droplet\_ipv4
+
+Description: Droplet IPV4 Address
+
+### droplet\_ipv4\_private
+
+Description: Droplet's private IPV4 Address
+
+### droplet\_ipv6
+
+Description: Droplet IPV6 Address
+
+### droplet\_ipv6\_private
+
+Description: Droplet private IPV6 Address
+
