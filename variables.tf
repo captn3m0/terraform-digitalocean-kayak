@@ -19,3 +19,7 @@ variable "size" {
 variable "ssh_key" {
   description = "SSH Key to be addded to the controller server"
 }
+
+variable "asset_dir" {
+  description = "local directory to store assets"
+}
