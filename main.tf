@@ -1,6 +1,6 @@
 resource "digitalocean_ssh_key" "default" {
-  name       = "default"
-  public_key = ["${var.ssh_key}"]
+  name       = "kayak-key"
+  public_key = "${var.ssh_key}"
 }
 
 resource "digitalocean_droplet" "droplet" {
@@ -14,5 +14,5 @@ resource "digitalocean_droplet" "droplet" {
 
   ssh_keys = ["${digitalocean_ssh_key.default.fingerprint}"]
 
-  user_data = "${module.kayak.config}"
+  user_data = "${module.ignition.config}"
 }

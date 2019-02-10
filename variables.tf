@@ -15,3 +15,7 @@ variable "size" {
   description = "digital ocean size"
   default     = "1gb"
 }
+
+variable "ssh_key" {
+  description = "SSH Key to be addded to the controller server"
+}
