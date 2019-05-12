@@ -1,7 +1,7 @@
 # This file is shared between all provisioners (digital ocean/aws/...)
 module "ignition" {
   source    = "captn3m0/docker-api/ignition"
-  version   = "1.0.3"
+  version   = "1.0.4"
   cert_path = "${var.cert_path}"
 
   ca_subject = {
